@@ -1,6 +1,6 @@
 local Library = (Quan.UILibrary == "Linoria" and "LinoriaLib" or "Obsidian")
 local BaseUrl = "https://raw.githubusercontent.com/mstudio45/" .. Library .. "/refs/heads/main/"
-local QuanUrl = "https://raw.githubusercontent.com/quan10101001-ux/ACRI-QUAN-HUB/refs/heads/main/"
+local QuanUrl = "https://raw.githubusercontent.com/quan10101001/Acri-quanhub/refs/heads/main/"
 
 return {
   Library = loadstring(game:HttpGet(BaseUrl .. "Library.lua"))(),
