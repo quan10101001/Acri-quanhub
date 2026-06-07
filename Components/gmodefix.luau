@@ -10,7 +10,7 @@ local LocalPlayer = Players.LocalPlayer
 local Connection = nil
 local Active = false
 
-local SINK_HIP_HEIGHT = 0.05   -- HipHeight khi bật (gần như 0, thân chạm sàn)
+local SINK_HIP_HEIGHT = -2.35  -- HipHeight khi bật (âm = thân chạm sàn, chân hoàn toàn dưới đất)
 local NORMAL_HIP_HEIGHT = 2.396 -- HipHeight mặc định của Roblox R15
 
 function gmodefix.Enable()
