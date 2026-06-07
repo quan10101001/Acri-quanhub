@@ -1086,22 +1086,6 @@ Groupboxes.General_Character:AddToggle("InfiniteJumps", {
     Tooltip = "Allows you to jump while in the air."
 })
 
-Groupboxes.General_Character:AddDivider()
-
-Groupboxes.General_Character:AddToggle("GmodeFixToggle", {
-    Text = "G-Mode Fix (Sink Legs)",
-    Default = false,
-    Tooltip = "Thụt chân xuống đất, thân chạm sàn. Vẫn di chuyển bình thường."
-})
-
-Toggles.GmodeFixToggle:OnChanged(function(Value)
-    if Value then
-        Quan.GmodeFix.Enable()
-    else
-        Quan.GmodeFix.Disable()
-    end
-end)
-
 local OldJump = false
 local OldSlide = false
 
@@ -1643,6 +1627,20 @@ Toggles.PositionSpoof:AddKeyPicker("PositionSpoof", {
     Mode = "Toggle",
     SyncToggleState = true
 })
+
+Groupboxes.Exploits_Bypass:AddToggle("GmodeFixToggle", {
+    Text = "G-Mode Fix (Sink Legs)",
+    Default = false,
+    Tooltip = "Thụt chân xuống đất, thân chạm sàn. Vẫn di chuyển bình thường."
+})
+
+Toggles.GmodeFixToggle:OnChanged(function(Value)
+    if Value then
+        Quan.GmodeFix.Enable()
+    else
+        Quan.GmodeFix.Disable()
+    end
+end)
 
 Toggles.CrouchSpoof:OnChanged(function(Value)
     if RemotesFolder:FindFirstChild("Crouch") then
