@@ -36,8 +36,8 @@ end
 task.wait(1)
 
 local Window = Library:CreateWindow({
-    Title = (Quan.UILibrary == "Linoria" and "Quan Hub - discord.gg/5jwbZcqjVF" or "Quan Hub"),
-    Footer = "Quan Hub - discord.gg/5jwbZcqjVF",
+    Title = (Quan.UILibrary == "Linoria" and "Quan HUB V2 - discord.gg/5jwbZcqjVF" or "Quan HUB V2"),
+    Footer = "Quan HUB V2 - discord.gg/5jwbZcqjVF",
     NotifySide = "Right",
     ShowCustomCursor = false,
     AutoShow = true,

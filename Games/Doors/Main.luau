@@ -496,7 +496,7 @@ Functions.Notify = function(Settings)
         end
 
         Globals.DoorsNotify({
-            Title = "Quan Hub",
+            Title = "Quan HUB V2",
             Description = Settings.Title,
             Reason = Settings.Body,
             Style = IsEntity and "WARNING" or "NOTIFICATION",
@@ -975,8 +975,8 @@ Functions.GetRandomCode = function()
 end
 
 local Window = Library:CreateWindow({
-    Title = (Quan.UILibrary == "Linoria" and "Quan Hub - discord.gg/5jwbZcqjVF" or "Quan Hub"),
-    Footer = "Quan Hub - discord.gg/5jwbZcqjVF",
+    Title = (Quan.UILibrary == "Linoria" and "Quan HUB V2 - discord.gg/5jwbZcqjVF" or "Quan HUB V2"),
+    Footer = "Quan HUB V2 - discord.gg/5jwbZcqjVF",
     NotifySide = "Right",
     ShowCustomCursor = false,
     AutoShow = true,
@@ -3923,7 +3923,7 @@ Functions.HandleCharacter = function(NewCharacter)
         end
 
         if Globals.SelfKilled and Globals.MainUI:FindFirstChild("Statistics") then
-            Globals.MainUI.Statistics.Death.Text = "Died to Quan Hub"
+            Globals.MainUI.Statistics.Death.Text = "Died to Quan HUB V2"
         end
         if Globals.MainUI:FindFirstChild("MainFrame") and Globals.MainUI.MainFrame.Healthbar:FindFirstChild("Effects") and Globals.MainUI.MainFrame.Healthbar.Effects:FindFirstChild("Crouching") then
             Globals.MainUI.MainFrame.Healthbar.Effects.Crouching.Visible = Functions.IsCrouching()
